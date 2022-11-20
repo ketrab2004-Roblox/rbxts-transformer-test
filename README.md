@@ -1,3 +1,10 @@
+# how to
+* run `npm i`
+* go into `/example`
+* also run `npm i` here
+* run `npm run build` which will build the transformer, then the example
+* you should see all nodes in the terminal
+
 # rbxts-transformer-services
 This is a [demo transformer](#template) that converts @rbxts/services imports into plain GetService calls for increased legibility.
 
