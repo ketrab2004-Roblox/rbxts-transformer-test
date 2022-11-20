@@ -7,7 +7,9 @@
     "build:parent": "cd .. && npm run build && cd example",
 
     "prebuild": "npm run build:parent",
-    "build": "rbxtsc"
+    "build": "rbxtsc",
+
+    "version": "rbxtsc -v"
   },
   "keywords": [],
   "author": "",
