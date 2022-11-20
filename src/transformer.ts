@@ -28,6 +28,8 @@ export class TransformContext {
 	 * Transforms the children of the specified node.
 	 */
 	transform<T extends ts.Node>(node: T): T {
+		console.log(ts.SyntaxKind[node.kind], node.getChildCount());
+
 		return ts.visitEachChild(node, (node) => visitNode(this, node), this.context);
 	}
 }
