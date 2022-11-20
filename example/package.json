@@ -1,0 +1,21 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:parent": "cd .. && npm run build && cd example",
+
+    "prebuild": "npm run build:parent",
+    "build": "rbxtsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rbxts/compiler-types": "^2.0.4-types.0",
+    "@rbxts/types": "^1.0.648",
+    "typescript": "^4.9.3",
+    "rbxts-transformer-test": "file:.."
+  }
+}
